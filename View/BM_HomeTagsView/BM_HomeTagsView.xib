@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BM_HomeTagsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1006" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4o-KR-kKT">
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <state key="normal" title="推荐">
+                        <color key="titleColor" red="0.22817674279212952" green="0.85145741701126099" blue="0.51839756965637207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="MHTagsBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="gWr-tt-ae1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1007" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NR8-D1-53G">
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <state key="normal" title="排行">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="MHTagsBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="nqc-SA-zF9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1008" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0f-g7-88J">
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <state key="normal" title="歌单">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="MHTagsBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="aPz-Iw-97W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFb-tH-Gp1">
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <state key="normal" title="电台">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="MHTagsBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="Fft-Gg-Mc2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1010" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23Q-Me-0zZ">
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                    <state key="normal" title="MV">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="MHTagsBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="8xp-Rx-Orh"/>
+                    </connections>
+                </button>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrd-Yq-ZiW">
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="cdZ-mq-5Rh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-IO-hhb">
+                    <color key="backgroundColor" red="0.22817674279212952" green="0.85145741701126099" blue="0.51839756965637207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1.5" id="dgp-Ik-tOs"/>
+                        <constraint firstAttribute="width" constant="51" id="eh7-K3-I7e"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Hrd-Yq-ZiW" secondAttribute="trailing" id="2Cq-CP-bZA"/>
+                <constraint firstItem="E4o-KR-kKT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3k9-GM-XGc"/>
+                <constraint firstItem="XFb-tH-Gp1" firstAttribute="top" secondItem="E4o-KR-kKT" secondAttribute="top" id="4Re-cX-bFR"/>
+                <constraint firstItem="23Q-Me-0zZ" firstAttribute="width" secondItem="E4o-KR-kKT" secondAttribute="width" id="6xP-x4-Hoh"/>
+                <constraint firstItem="NR8-D1-53G" firstAttribute="bottom" secondItem="E4o-KR-kKT" secondAttribute="bottom" id="BtZ-JG-g2t"/>
+                <constraint firstItem="NR8-D1-53G" firstAttribute="width" secondItem="E4o-KR-kKT" secondAttribute="width" id="DP7-kY-dzg"/>
+                <constraint firstAttribute="bottom" secondItem="Hrd-Yq-ZiW" secondAttribute="bottom" id="HEj-4e-KGh"/>
+                <constraint firstItem="XFb-tH-Gp1" firstAttribute="bottom" secondItem="E4o-KR-kKT" secondAttribute="bottom" id="KIo-nB-7qP"/>
+                <constraint firstItem="XFb-tH-Gp1" firstAttribute="width" secondItem="E4o-KR-kKT" secondAttribute="width" id="Kbf-Lg-z9x"/>
+                <constraint firstItem="NR8-D1-53G" firstAttribute="top" secondItem="E4o-KR-kKT" secondAttribute="top" id="SeF-2j-ae7"/>
+                <constraint firstItem="K0f-g7-88J" firstAttribute="trailing" secondItem="XFb-tH-Gp1" secondAttribute="leading" id="VeU-UE-bCS"/>
+                <constraint firstItem="zdu-IO-hhb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="XT3-oc-lpo"/>
+                <constraint firstItem="XFb-tH-Gp1" firstAttribute="trailing" secondItem="23Q-Me-0zZ" secondAttribute="leading" id="YkO-8I-0l7"/>
+                <constraint firstItem="K0f-g7-88J" firstAttribute="width" secondItem="E4o-KR-kKT" secondAttribute="width" id="b3n-19-NcF"/>
+                <constraint firstItem="K0f-g7-88J" firstAttribute="top" secondItem="E4o-KR-kKT" secondAttribute="top" id="b9Y-EW-CIG"/>
+                <constraint firstAttribute="trailing" secondItem="23Q-Me-0zZ" secondAttribute="trailing" id="c9m-S5-XgG"/>
+                <constraint firstItem="E4o-KR-kKT" firstAttribute="trailing" secondItem="NR8-D1-53G" secondAttribute="leading" id="dSK-Lu-kiq"/>
+                <constraint firstAttribute="bottom" secondItem="zdu-IO-hhb" secondAttribute="bottom" id="iUu-N5-w6n"/>
+                <constraint firstItem="NR8-D1-53G" firstAttribute="trailing" secondItem="K0f-g7-88J" secondAttribute="leading" id="psk-xC-KFO"/>
+                <constraint firstItem="Hrd-Yq-ZiW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rXT-l2-VRR"/>
+                <constraint firstItem="23Q-Me-0zZ" firstAttribute="bottom" secondItem="E4o-KR-kKT" secondAttribute="bottom" id="tQg-Gn-O2w"/>
+                <constraint firstItem="E4o-KR-kKT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uOn-vA-UUR"/>
+                <constraint firstItem="K0f-g7-88J" firstAttribute="bottom" secondItem="E4o-KR-kKT" secondAttribute="bottom" id="uzl-43-EHL"/>
+                <constraint firstItem="23Q-Me-0zZ" firstAttribute="top" secondItem="E4o-KR-kKT" secondAttribute="top" id="ytX-7Y-ruf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tagsLineView" destination="zdu-IO-hhb" id="Tso-WT-82n"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-254"/>
+        </view>
+    </objects>
+</document>
